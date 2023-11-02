@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fruits Assignment</title>
+  <link rel="stylesheet" href="./images/logo.png" />
+  <!-- tailwind and daisy khala -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- manrop google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+  <!-- tailwind custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .font-manrope {
+      font-family: "Exo 2", sans-serif;
+      font-family: "Manrope", sans-serif;
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-manrope max-w-6xl mx-auto">
+  <header>
+    <nav class="navbar bg-base-100 md:bg-red-400 rounded-full md:my-4 md:text-white">
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+      <div class="navbar-center md:ml-36">
+        <div class="w-10 rounded-full">
+          <img src="./images/logo.png" />
+        </div>
+        <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="relative hidden md:block">
+          <input type="text" placeholder="Search here"
+            class="input input-bordered w-14 md:w-auto bg-white rounded-full pr-10">
+          <i class="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 fas fa-search"></i>
+        </div>
+      </div>
+      <div class="dropdown lg:hidden">
+        <label for="menu-toggle" class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Shop</a></li>
+          <li><a>All Fruits</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+ 
+  <!-- Add this script to your HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
+
+</body>
+
+</html>
